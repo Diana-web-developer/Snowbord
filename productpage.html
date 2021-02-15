@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;0,800;1,200&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href="burger/css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+     <link rel="stylesheet" href="css/productpage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Surfhouse product page</title>
+</head>
+
+<body>
+    <header class="header wrapper" id="header">
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="img/shutterstock_55505458.jpg" style="width:%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/shutterstock_96457814.jpg" style="width:%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/shutterstock_121385920.jpg" style="width:%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="pagination" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="container container-in-header">
+            <div class="up">
+                <div class="up__logo">
+                    <a href="#header"><img class="logo" src="img/logo.png" alt="#" width="100px"></a>
+                </div>
+                <ul class="up__networks">
+                    <li class="up__networks__social"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="24" height="24" viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="M125.59583,64.5h-25.2625v-14.33333c0,-7.396 0.602,-12.05433 11.2015,-12.05433h13.38733v-22.79c-6.5145,-0.67367 -13.06483,-1.00333 -19.62233,-0.989c-19.44317,0 -33.63317,11.87517 -33.63317,33.67617v16.4905h-21.5v28.66667l21.5,-0.00717v64.50717h28.66667v-64.5215l21.973,-0.00717z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></a></li>
+                    <li class="up__networks__social"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="30" height="30" viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g id="original-icon" fill="#ffffff">
+                                        <path
+                                            d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,37.9948 30.8052,68.8 68.8,68.8c37.9948,0 68.8,-30.8052 68.8,-68.8c0,-37.9948 -30.8052,-68.8 -68.8,-68.8zM122.46973,108.74413l-10.70987,0.14907c0,0 -2.31053,0.45293 -5.332,-1.634c-4.0076,-2.752 -7.78587,-9.91293 -10.7328,-8.98413c-2.98707,0.95173 -2.89533,7.396 -2.89533,7.396c0,0 0.02293,1.1352 -0.65933,1.8748c-0.7396,0.79693 -2.19013,0.71667 -2.19013,0.71667h-4.7988c0,0 -10.58373,0.8772 -19.91187,-8.84653c-10.15947,-10.60093 -19.13787,-31.52187 -19.13787,-31.52187c0,0 -0.52747,-1.31867 0.0344,-1.9952c0.6364,-0.74533 2.35067,-0.76827 2.35067,-0.76827l11.46667,-0.05733c0,0 1.07787,0.1892 1.8576,0.76253c0.6364,0.47013 0.9976,1.35307 0.9976,1.35307c0,0 1.85187,4.6956 4.31147,8.94973c4.79307,8.2904 7.0176,10.10787 8.64587,9.2192c2.3736,-1.29573 1.66267,-11.71893 1.66267,-11.71893c0,0 0.04587,-3.784 -1.19253,-5.4696c-0.9632,-1.31293 -2.77493,-1.7028 -3.56613,-1.80027c-0.64787,-0.086 0.40707,-1.58813 1.78307,-2.26467c2.064,-1.00907 5.7104,-1.0664 10.01613,-1.02627c3.354,0.0344 4.32293,0.2408 5.63013,0.56187c3.956,0.95747 2.6144,4.64973 2.6144,13.50773c0,2.838 -0.51027,6.8284 1.5308,8.14133c0.88293,0.5676 3.03293,0.086 8.3936,-9.05293c2.55133,-4.3344 4.46053,-9.4256 4.46053,-9.4256c0,0 0.41853,-0.90587 1.0664,-1.29573c0.66507,-0.40133 1.55947,-0.2752 1.55947,-0.2752l12.06867,-0.07453c0,0 3.62347,-0.43573 4.214,1.20973c0.6192,1.72 -1.35307,5.73907 -6.28373,12.3152c-8.09547,10.8016 -8.9956,9.79827 -2.2704,16.0476c6.42133,5.9684 7.74573,8.86947 7.96933,9.2364c2.65453,4.4204 -2.95267,4.77013 -2.95267,4.77013z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></a></li>
+                    <li class="up__networks__social"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="30" height="30" viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="M57.32214,17.2c-22.12493,0 -40.12214,18.01386 -40.12214,40.14453v57.33333c0,22.12493 18.01386,40.12214 40.14453,40.12214h57.33333c22.12493,0 40.12214,-18.01386 40.12214,-40.14453v-57.33333c0,-22.12493 -18.01386,-40.12214 -40.14453,-40.12214zM126.13333,40.13333c3.1648,0 5.73333,2.56853 5.73333,5.73333c0,3.1648 -2.56853,5.73333 -5.73333,5.73333c-3.1648,0 -5.73333,-2.56853 -5.73333,-5.73333c0,-3.1648 2.56853,-5.73333 5.73333,-5.73333zM86,51.6c18.9716,0 34.4,15.4284 34.4,34.4c0,18.9716 -15.4284,34.4 -34.4,34.4c-18.9716,0 -34.4,-15.4284 -34.4,-34.4c0,-18.9716 15.4284,-34.4 34.4,-34.4zM86,63.06667c-12.66573,0 -22.93333,10.2676 -22.93333,22.93333c0,12.66573 10.2676,22.93333 22.93333,22.93333c12.66573,0 22.93333,-10.2676 22.93333,-22.93333c0,-12.66573 -10.2676,-22.93333 -22.93333,-22.93333z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></a></li>
+                    <li class="up__networks__social"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#ffffff">
+                                        <path
+                                            d="M158.71128,22.53888c-2.58,-2.18784 -6.63232,-2.50088 -10.82224,-0.81872h-0.00688c-4.40664,1.76816 -124.73784,53.38192 -129.6364,55.49064c-0.89096,0.3096 -8.67224,3.21296 -7.87072,9.68016c0.71552,5.8308 6.96944,8.24568 7.73312,8.52432l30.59192,10.4748c2.0296,6.75616 9.5116,31.6824 11.16624,37.00752c1.032,3.3196 2.71416,7.68152 5.66224,8.57936c2.58688,0.9976 5.16,0.086 6.82496,-1.2212l18.70328,-17.34792l30.19288,23.5468l0.71896,0.43c2.05024,0.90816 4.01448,1.36224 5.88928,1.36224c1.44824,0 2.838,-0.27176 4.16584,-0.81528c4.5236,-1.8576 6.33304,-6.16792 6.52224,-6.6564l22.55264,-117.22488c1.376,-6.2608 -0.53664,-9.44624 -2.38736,-11.01144zM75.68,110.08l-10.32,27.52l-10.32,-34.4l79.12,-58.48z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></a></li>
+
+                    <li class="up__networks__social"><a href="#"> <img class="viber" src="img/icons8-viber.svg" alt="#">
+                        </a></li>
+
+                </ul>
+            </div>
+            <div class="content-for-header">
+                <div class="login-basket-seach-welcome">
+                    <div class="login-basket-seach">
+                        <div class="login-wish">
+                            <!-- Кнопка для открытия модальной формы входа -->
+                            <button class="button-login"
+                                onclick="document.getElementById('id01').style.display='block'">Login in</button>
+
+                            <!-- Модальный -->
+                            <div id="id01" class="modal-login">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Закрыть модальный">&times;</span>
+
+                                <!-- Модальный контент -->
+                                <form class="modal-content animate" action="/action_page.php">
+                                    <div class="imgcontainer">
+                                        <img src="img/img_avatar2.jpg" alt="avatar" class="avatar">
+                                    </div>
+
+                                    <div class="container-for-user">
+                                        <label for="uname"><b>User</b></label>
+                                        <input class="put-your-name" type="text" placeholder="Put your name"
+                                            name="uname" required>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input class="put-your-password" type="password" placeholder="Put your password"
+                                            name="psw" required>
+
+                                        <button class="submit" type="submit">Submit</button>
+                                        <label class="for-checkbox">
+                                            <input class="checkbox" type="checkbox" checked="checked"
+                                                name="remember">Remember me
+                                        </label>
+                                        <div class="for-cancel-and-forgot">
+                                            <button type="button"
+                                                onclick="document.getElementById('id01').style.display='none'"
+                                                class="cancelbtn">Cancel</button>
+                                            <span class="psw">Forgot your <a href="#">password</a>?</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- <a href="#" class="login-in">login in</a> -->
+
+                            <!-- Кнопка для открытия модального -->
+                            <button class="button-sign"
+                                onclick="document.getElementById('id02').style.display='block'">Sing up</button>
+
+                            <!-- Модальный (содержит форму регистрации) -->
+                            <div id="id02" class="modal">
+                                <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                                    title="Закрыть модальный">X</span>
+                                <form class="modal-content animate" action="/action_page.php">
+                                    <div class="container-for-user">
+                                        <h2>Registration form</h2>
+                                        <p class="fill">Fill out this form to create an account</p>
+                                        <hr>
+
+                                        <label for="uname"><b>Email</b></label>
+                                        <input class="put-your-name" type="text" placeholder="Put your email"
+                                            name="uname" required>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input class="put-your-password" type="password" placeholder="Put your password"
+                                            name="psw" required>
+
+                                        <label for="psw"><b>Repeat password</b></label>
+                                        <input class="put-your-password" type="password"
+                                            placeholder="Repeat your password" name="psw" required>
+
+                                        <p class="by-creating">By creating an account, you agree to our <a
+                                                href="#">Privacy Terms</a>.</p>
+
+                                        <button class="submit" type="submit">Submit</button>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- <a href="#" class="wis h-list">wish list (0)</a> -->
+                        </div>
+                        <div class="basket-items-edit">
+                            <div class="for-basket"><img class="basket" src="img/basket.png" alt="#">
+                            </div>
+                            <div class="items">
+                                <p class="sum">$ 1,543.00</p>
+                                <p class="quantity">2 items</p>
+                            </div>
+                            <div class="clear-edit">
+                                <a href="#" class="for-clear"><img src="img/icons8-delete2.svg" alt="#"
+                                        class="clear"></a>
+                                <a href="#" class="edit">Edit</a>
+                            </div>
+                        </div>
+
+                        
+
+                        
+                        <form action="#">
+                                        <input class="search" type="text" name="search" placeholder="Search...">
+                        </form>
+
+                    </div>
+                    <div class="welcome">
+                        <h2 class="welcome__to">welcome to <br> surfhouse</h2>
+                        <p class="the-only">The only online store you will ever need for all your windsurfing and
+                            kitesurfing and SUP needs</p>
+                    </div>
+                </div>
+                <div class="jp">
+                    <h1>JP Funride<br>2020</h1>
+                    <p class="super">Super easy going freeride boards based on the X-Cite Ride </p>
+                    <div class="buy-now-and-burger">
+                        <a href="shoppingcard.html#shoppingcard" class="buy-now">buy now</a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section >
+        <div class="container">
+            <div class="content-in-section">
+                <div class="sidebar sidenav">
+                    
+                    <nav class="header__menu">
+                        <ul class="header__list menu">
+                            <li>
+                                <p>Menu</p>
+                            </li>
+                            <li>
+                                <a href="index.html#header" class="menu__item header__link go_to">Home</a>
+                            </li>
+                            <li>
+                                <a href="index.html#new" class="menu__item header__link go_to">New products</a>
+                            </li>
+                            <li>
+                                <a href="index.html#top" class="menu__item header__link go_to">Top products</a>
+                            </li>
+                            <li>
+                                <a href="index.html#sale" class="menu__item header__link go_to">Sale products</a>
+                            </li>
+                            <li>
+                                <a href="shoppingcard.html#shoppingcard" class="menu__item header__link">Basket</a>
+                            </li>
+                            <li>
+                                <a href="productpage.html#productpage" class="menu__item header__link">Product page</a>
+                            </li>
+                            <li>
+                                <a href="contact.html#contact" class="menu__item header__link">Contacts</a>
+                            </li>
+                            <li>
+                                <a href="#id01" class="menu__item header__link for-active-menu">Login</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu__item header__link for-active-menu">Sign Up</a>
+                            </li>
+                            <li class="for-active-menu">
+                                <form action="#">
+                                    <input class="search" type="text" name="search" placeholder="Search...">
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    
+                    
+
+
+
+                    <!-- accordion.js -->
+                    <div class="experts">
+                        <p class="article-experts">Article experts</p>
+                        <ul class="accordeon">
+                            <li class="active">
+                                <a href="#">LG Spectrum review</a>
+                                <ul>
+                                    <li> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic in autem placeat
+                                        error nisi ipsam quaerat eveniet ab saepe quae. </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Verizon Droid Xyboard 8.2 and 10.1 review</a>
+                                <ul>
+                                    <li> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, consequatur! </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Mac mini review (mid 2020)</a>
+                                <ul>
+                                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum rerum temporibus
+                                        repellat similique in earum!</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Wacom Inkling review</a>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, eos.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Sonos Play:3 review</a>
+                                <ul>
+                                    <li> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic in autem placeat
+                                        error nisi ipsam quaerat eveniet ab saepe quae. </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">HTC Radar 4G review</a>
+                                <ul>
+                                    <li> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, consequatur! </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Canon PowerShot S100</a>
+                                <ul>
+                                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum rerum temporibus
+                                        repellat similique in earum!</li>
+                                </ul>
+                            </li>
+                            <div id="more" class="accordeon">
+                                <li>
+                                    <a href="#">Sonos Play:3 review</a>
+                                    <ul>
+                                        <li> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic in autem placeat
+                                            error nisi ipsam quaerat eveniet ab saepe quae. </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">HTC Radar 4G review</a>
+                                    <ul>
+                                        <li> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, consequatur!
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Canon PowerShot S100</a>
+                                    <ul>
+                                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum rerum
+                                            temporibus repellat similique in earum!</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Apple iMac </a>
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, eos.</li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                        <div class="view-all-and-arrow">
+                            <button onclick="myFunction()" id="myBtn" class="view-and-arrow view-all">
+                                view all</button>
+                            <span id="dots"><img src="img/icons8-right-arrow-24.jpg" alt="#" class="arrow-for-view"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cards main" id="new">
+
+                    <div class="" id="productpage">
+                        <div class="breadcrambs-and-back">
+                            <ul class="breadcrambs">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <img class="double-arrows-right" src="img/icons8-double-down-24 (1).jpg" alt="">
+                                <li>
+                                    <a href="#">Clothes</a>
+                                </li>
+                                <img class="double-arrows-right" src="img/icons8-double-down-24 (1).jpg" alt="">
+                                <li>
+                                    <a href="#">Men</a>
+                                </li>
+                                
+                            </ul>
+                            <div class="back-to-previous">
+                                <img class="double-arrows-left" src="img/icons8-double-down-24 (1).jpg" alt="">
+                                <a href="#" class="back-to-previous">Back to previous page</a>
+                            </div>
+                        </div>
+                    
+                        <div class="product-card">
+                            <div class="slider-and-peeky">
+                                    <div class="slider-for-product img-magnifier-container">
+                                        <img id="myimage" src="img/FO027EMHSHS2_10247696_1_v1_2x.jpg"  alt="#">
+                                    </div>
+                    
+                                <div class="peeky-croped">
+                                    <h2>PEEKY CROPPED</h2>
+                                    <div class="stars-review-border-add">
+                    
+                    
+                                        <div class="rating rating_set">
+                                            <div class="rating__body">
+                                                <div class="rating__active"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item" value="1" name="rating">
+                                                    <input type="radio" class="rating__item" value="2" name="rating">
+                                                    <input type="radio" class="rating__item" value="3" name="rating">
+                                                    <input type="radio" class="rating__item" value="4" name="rating">
+                                                    <input type="radio" class="rating__item" value="5" name="rating">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value">3.6</div>
+                                        </div>
+                    
+                    
+                                    </div>
+                                    <div class="price-code-availability">
+                                        <div class="euro-price">
+                                            <img src="img/icons8-euro-24.png">
+                                            <div class="price">563.00</div>
+                                        </div>
+                                        <div class="code-availability">
+                                            <p>Product code: 257</p>
+                                            <p>Availability: In stock</p>
+                                        </div>
+                                    </div>
+                                    <div class="grey-line"></div>
+                                    <div class="quick">
+                                        <p class="little-name">Quick Overview:</p>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore consequuntur aut
+                                            vel a consequatur modi quas vero officia provident repellendus placeat facilis,
+                                            dolores, nisi natus? Perferendis cupiditate atque obcaecati quos minus labore
+                                            tempore, alias, rerum temporibus voluptatibus asperiores pariatur sed fuga
+                                            quidem nulla veniam doloremque. Maiores dolorum labore quod reprehenderit.</p>
+                                    </div>
+                                    <div class="grey-line"></div>
+                                    <div class="size">
+                                        <label class="container-for-size">S
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-for-size">M
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-for-size">L
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-for-size">XL
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="grey-line"></div>
+                                    <div class="for-quantity2">
+
+
+                                        
+                                        <div class="add-to-card">
+                                            <a href="#">Add to card</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="top-products">
+                            <h3>You must also like</h3>
+                            <div class="for-cards">
+                                <a href="#" class="card">
+                                    <img src="img/FO027EMHSGW6_10261610_1_v1_2x.jpg" alt="#">
+                                    <div class="name-and-price">
+                                        <p class="name">OG SCALLOP SOLID</p>
+                                        <p class="price">$761.00</p>
+                                    </div>
+                                </a>
+                                <a href="3" class="card">
+                                    <img src="img/FO027EMHSGW7_10246140_1_v1_2x.jpg" alt="#">
+                                    <div class="name-and-price">
+                                        <p class="name">STRIPE 19</p>
+                                        <p class="price">$ 2 841.00</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="card">
+                                    <img src="img/FO027EMHSGX8_10246155_1_v1_2x.jpg" alt="#">
+                                    <div class="name-and-price">
+                                        <p class="name">Joke20</p>
+                                        <p class="price">$ 294.00</p>
+                                        <p class="crossed-price">$845.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sale-products">
+                            <h3>RECENTLY VIEWED</h3>
+                            <div class="for-cards">
+                                <a href="#" class="card">
+                                    <img src="img/IC647EMHZFP7_10172277_1_v1_2x.jpg" alt="#">
+                                    <div class="name-and-price">
+                                        <p class="name">OG SCALLOP SOLID</p>
+                                        <p class="price">$761.00</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="card">
+                                    <img src="img/MP002XM0NAGI_10179004_1_v1_2x.jpg" alt="#">
+                                    <div class="name-and-price">
+                                        <p class="name">STRIPE 19</p>
+                                        <p class="price">$ 2 841.00</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="card">
+                                    <img src="img/OU004EMHYMH0_10256325_1_v1_2x.jpg" alt="#">
+                                    <div class="name-and-price">
+                                        <p class="name">Joke20</p>
+                                        <p class="price">$ 294.00</p>
+                                        <p class="crossed-price">$845.00</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                    
+
+                </div>
+            </div>
+            <div class="brand">
+                <p class="brand-brand">brand</p>
+                <p class="brand-brand">brand</p>
+                <p class="brand-brand">brand</p>
+                <p class="brand-brand">brand</p>
+                <p class="brand-brand">brand</p>
+                <p class="brand-brand">brand</p>
+                <p class="brand-brand">brand</p>
+                <p class="brand-brand">brand</p>
+            </div>
+            <div class="low-level">
+                <a href="#" class="for-instagram-feed">
+                    <img src="img/icons8-cameras-30.png" alt="#">
+                    <p>Instagram feed: #surfhouse</p>
+                </a>
+                <div class="for-summer-pics">
+                    <div class="summer-pics"><img src="img/insta1.jpg" alt="#"></div>
+                    <div class="summer-pics"><img src="img/insta2.jpg" alt="#"></div>
+                    <div class="summer-pics"><img src="img/insta3.jpg" alt="#"></div>
+                    <div class="summer-pics"><img src="img/insta4.jpg" alt="#"></div>
+                    <div class="summer-pics"><img src="img/insta5.jpg" alt="#"></div>
+                    <div class="summer-pics"><img src="img/insta6.jpg" alt="#"></div>
+                </div>
+                <div class="for-tree-nets">
+                    <a href="#" class="for-facebook"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                            height="24" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M125.59583,64.5h-25.2625v-14.33333c0,-7.396 0.602,-12.05433 11.2015,-12.05433h13.38733v-22.79c-6.5145,-0.67367 -13.06483,-1.00333 -19.62233,-0.989c-19.44317,0 -33.63317,11.87517 -33.63317,33.67617v16.4905h-21.5v28.66667l21.5,-0.00717v64.50717h28.66667v-64.5215l21.973,-0.00717z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></li>
+                    </a>
+                    <a href="#" class="for-viber"><img class="viber" src="img/icons8-viber.svg" alt="#"></a>
+
+                    <a href="#" class="for-vk"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                            height="24" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M158.71128,22.53888c-2.58,-2.18784 -6.63232,-2.50088 -10.82224,-0.81872h-0.00688c-4.40664,1.76816 -124.73784,53.38192 -129.6364,55.49064c-0.89096,0.3096 -8.67224,3.21296 -7.87072,9.68016c0.71552,5.8308 6.96944,8.24568 7.73312,8.52432l30.59192,10.4748c2.0296,6.75616 9.5116,31.6824 11.16624,37.00752c1.032,3.3196 2.71416,7.68152 5.66224,8.57936c2.58688,0.9976 5.16,0.086 6.82496,-1.2212l18.70328,-17.34792l30.19288,23.5468l0.71896,0.43c2.05024,0.90816 4.01448,1.36224 5.88928,1.36224c1.44824,0 2.838,-0.27176 4.16584,-0.81528c4.5236,-1.8576 6.33304,-6.16792 6.52224,-6.6564l22.55264,-117.22488c1.376,-6.2608 -0.53664,-9.44624 -2.38736,-11.01144zM75.68,110.08l-10.32,27.52l-10.32,-34.4l79.12,-58.48z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg></li>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="big-footer container">
+            <div class="category">
+                <h4>Cathegory</h4>
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">News</a>
+                <a href="#">New collections</a>
+                <a href="#">News</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div class="our-account">
+                <h4>Our accounts</h4>
+                <a href="#">Our accounts</a>
+                <a href="#">Personal information</a>
+                <a href="#">News</a>
+                <a href="#">New collections</a>
+                <a href="#">Adress</a>
+                <a href="#">Discount</a>
+                <a href="#">Contacts</a>
+            </div>
+            <div class="our-support">
+                <h4>Our support</h4>
+                <a href="#">feedbacks</a>
+                <a href="#">Personal information</a>
+                <a href="#">News</a>
+                <a href="#">New collections</a>
+                <a href="#">Adress</a>
+                <a href="#">Discount</a>
+            </div>
+            <div class="news">
+                <h4>News</h4>
+                <p>Join thousands of other people subscribe to our news</p>
+                <div class="for-credit-cards">
+                    <div class="for-credit"><img src="img/aex.jpg" alt="#"></div>
+                    <div class="for-credit"><img src="img/aex2.jpg" alt="#"></div>
+                    <div class="for-credit"><img src="img/aex3.jpg" alt="#"></div>
+                    <div class="for-credit"><img src="img/aex4.jpg" alt="#"></div>
+                    <div class="for-credit"><img src="img/aex5.jpg" alt="#"></div>
+                    <div class="for-credit"><img src="img/aex6.jpg" alt="#"></div>
+                </div>
+            </div>
+            <div class="about-us">
+                <h4>About us</h4>
+                <p>All rights reserved - Designed by theunreatielab.com Web-development - Diana Alekseeva</p>
+                <p>Pics are taken from https://www.lamoda.ru/ and used not for commercial purposes</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="burger/js/script.js"></script>
+    <script src="js/view-all.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/stars.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/zoom.js"></script>
+    <script>
+        /* Execute the magnify function: */
+        magnify("myimage", 3);
+    /* Specify the id of the image, and the strength of the magnifier glass: */
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

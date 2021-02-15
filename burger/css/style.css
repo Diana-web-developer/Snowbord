@@ -1,0 +1,154 @@
+
+
+
+
+
+.header__burger {
+	display: none;
+}
+.header__menu {}
+
+
+.header__list {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+}
+.header__list li{
+	list-style: none;
+}
+.header__link {
+	color: black;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+@media (max-width:768px){
+	.slidecontainer {
+		display: none;
+	}
+	body.lock{
+		overflow: hidden;
+		position: fixed;
+	}
+	.header__body {
+		height: 50px;
+	}
+	
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 130;
+	}
+	.header__burger.active {
+		top: 15px;
+		right: 15px;
+		position: absolute;
+		color: white;
+		background-color: white;
+		z-index: 130;
+	}
+	.header__burger:before.active, .header__burger.active:after {
+		color: white;
+		background-color: white;
+	}
+	.header__burger.active span {
+		color: black;
+	}
+	.header__burger span{
+		position: absolute;
+		background-color:  #fff51f;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before,
+	.header__burger:after{
+		content: '';
+		background-color:  #fff51f;
+		color:white;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+		z-index: 130;
+	}
+	.header__burger:before{
+		top: 0;
+	}
+	.header__burger:after{
+		bottom: 0;
+	}
+
+	.header__burger.active span{
+		transform: scale(0);
+	}
+
+	.header__burger.active:before{
+		transform:rotate(45deg);
+		top: 9px;
+		background-color:  #fff51f;
+		color:white;
+		z-index: 130px;
+	}
+	.header__burger.active:after{
+		transform:rotate(-45deg);
+		bottom: 9px;
+		background-color:  #fff51f;
+		color:white;
+		z-index: 130;
+	}
+
+	.header__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		transition: all 0.3s ease 0s;
+		/* padding: 70px 10px 20px 10px; */
+	}
+
+	.header__menu.active{
+		top: 0;
+		z-index: 100;
+	}
+
+	.header__list {
+		display: block;
+	}
+	.header__list li{
+		margin: 0px 0px 20px 0px;
+	}
+	.header__link {
+		font-size: 24px;
+	}
+}
+
+
+
+
+.content {
+	padding: 100px 0px 0px 0px;
+}
+.content__text {
+	font-size: 18px;
+	line-height: 25px;
+}
+.content__text p{
+	margin: 0px 0px 20px 0px;
+}
+@media (max-width:767px){
+	.content {
+		padding: 70px 0px 0px 0px;
+	}
+}
